@@ -48,3 +48,10 @@ Lets test to make sure everything is working correctly.
 3. Visit http://localhost:8000 to see the Gatsby site.
 4. Visit http://localhost:8000/__graphql to use GraphiQL, an IDE for writing GraphQL queries.
 5. Run a test to ensure that your local Gatsby instance can successfully pull data from WPGraphQL.
+You can use this [query for pulling Pages](graphiql-allpages.json) and this one [for pulling Posts](graphiql-allposts.json)
+
+# Create a Page for Each Blog Post
+We can programmatically have Gatsby create a page for each blog post pulled from WordPress. This is configured in [`gatsby-node.js`](gatsby-node.js)
+
+# Showing Posts on the Index Page
+Pages are stored in the `src/pages` folder, we'll be editing [`index.js`](index.js).
