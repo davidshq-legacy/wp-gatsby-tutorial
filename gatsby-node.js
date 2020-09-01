@@ -14,7 +14,14 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
-    console.log(JSON.stringify(result, null, 4))
-    process.exit()
+    result.data.allWpPost.nodes.forEach((node) => {
+      createPage({
+        path: node.slug,
+        component: path.resolve(`./src/templates/blog-post.js`),
+        context: {
+          slug: node.slug,
+        },
+      })
+    })
   })
 }
