@@ -50,6 +50,10 @@ Lets test to make sure everything is working correctly.
 5. Run a test to ensure that your local Gatsby instance can successfully pull data from WPGraphQL.
 You can use this [query for pulling Pages](graphiql-allpages.json) and this one [for pulling Posts](graphiql-allposts.json)
 
+# Create a Blog Post Template
+1. Create a `templates` folder inside of the `src` folder in your local Gatsby instance.
+2. Add a template file [`blog-post.js`](blog-post.js).
+
 # Create a Page for Each Blog Post
 We can programmatically have Gatsby create a page for each blog post pulled from WordPress. This is configured in [`gatsby-node.js`](gatsby-node.js)
 
