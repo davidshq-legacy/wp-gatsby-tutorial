@@ -21,12 +21,13 @@ You can setup Gatsby in any number of ways. In this example I'll be using Visual
 11. VSC will spin up a new container for you (this only needs happen once), once it has been successfull created open a Terminal (Ctrl+Shift+`) and it will be within the container rather than one's local system.
 
 # Install Gatsby
-1. Run `npm install gatsby-cli`
+1. Run `npm install -g gatsby-cli`
 2. It will take several moments for npm to download and install the necessary packages.
 2. Create a new gatsby instance by running `gatsby new wpgatsby` (the name wpgatsby can be anything you desire).
 3. It will take more time for npm to download and install the necessary packages.
-4. With any luck you'll get the message: "Your new Gatsby website has been successfully bootstrapped."
-5. Enter into the gatsby site directory: `cd wpgatsby`.
+4. If prompted to choose a package manager and you don't have a preference, choose npm.
+5. With any luck you'll get the message: "Your new Gatsby website has been successfully bootstrapped."
+6. Enter into the gatsby site directory: `cd wpgatsby`.
 
 # Add the WordPress Source Plugin to Gatsby
 You'll now need to install `gatsby-source-wordpress-experimental` into your gatsby instance so that Gatsby can use data coming from your WordPress site.
