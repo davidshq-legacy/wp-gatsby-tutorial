@@ -40,3 +40,11 @@ You'll now need to install `gatsby-source-wordpress-experimental` into your gats
   },
 },
 ```
+
+# Is Everything Working?
+Lets test to make sure everything is working correctly.
+1. Run `gatsby develop`.
+2. Wait for gatsby to spin up.
+3. Visit http://localhost:8000 to see the Gatsby site.
+4. Visit http://localhost:8000/\_\_graphql to use GraphiQL, an IDE for writing GraphQL queries.
+5. Run a test to ensure that your local Gatsby instance can successfully pull data from WPGraphQL.
