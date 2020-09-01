@@ -1,0 +1,9 @@
+{
+    allWpPost(sort: { fields: [date] }) {
+        nodes {
+            title
+            excerpt
+            slug
+        }
+    }
+}
