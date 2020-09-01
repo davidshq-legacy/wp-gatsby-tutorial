@@ -1,0 +1,11 @@
+{
+  allWpPage {
+    nodes {
+      id
+      title
+      slug
+      date(formatString: "MMMM DD, YYYY")
+      content
+    }
+  }
+}
