@@ -7,7 +7,7 @@ This tutorial demonstrates how to setup a Gatsby instance to utilize a WordPress
 3. Download, install, and activate the [WP-Gatsby plugin](https://github.com/TylerBarnes/using-gatsby-source-wordpress-experimental/tree/master/WordPress/plugins) from GitHub.
 
 # Setup Gatsby Environment
-For [step-by-step instructions on setting up a Gatsby environment](https://github.com/davidshq/wp-gatsby-tutorial/tree/master).
+For [step-by-step instructions on setting up a Gatsby environment](https://github.com/davidshq/wp-gatsby-tutorial/blob/master/SetupGatsby.md).
 
 # Install Gatsby
 1. Run `npm install -g gatsby-cli`
