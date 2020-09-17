@@ -7,18 +7,19 @@ This tutorial demonstrates how to setup a Gatsby instance to utilize a WordPress
 3. Download, install, and activate the [WP-Gatsby plugin](https://github.com/TylerBarnes/using-gatsby-source-wordpress-experimental/tree/master/WordPress/plugins) from GitHub.
 
 # Setup Gatsby Environment
-You can setup Gatsby in any number of ways. In this example I'll be using Visual Studio Code.
+You can setup Gatsby in any number of ways. In this example I'll be using Visual Studio Code (VSC).
 1. Create a folder which will contain your Gatsby environment (e.g. wp-gatsby).
-2. Open Visual Studio code.
+2. Open VSC.
 3. Press Ctrl+Shift+P (or navigate to View --> Command Palette) to display the Command Palette prompt.
-4. Begin entering "Remote-Containers: Add Development Container Configuration Files", select appropriate option.
+4. Begin entering "Remote-Containers: Add Development Container Configuration Files", select this option when it appears.
 5. Choose Show All Definitions.
 6. Choose Node.js.
-7. You will be prompted to reload the current project in its container, reject this and edit the devcontainer.json file inside of the .devcontainer folder that was automatically created.
+7. You will be prompted to reload the current project in its container, reject this and edit the devcontainer.json file inside of the .devcontainer folder that was automatically created for you.
 8. To avoid issues with Node.js, add to `"build"` `"args": { "VARIANT": "12" }`.
 9. Uncomment `"remoteUser": "node"`.
+  - By default these Remote-Containers use root for the user. This causes issues as Node.js doesn't like running as root.
 10. Press Ctrl+Shift+P and begin entering "Remote-Containers: Reopen in Remote Container".
-11. VSC will spin up a new container for you (this only needs happen once), once it has been successfull created open a Terminal (Ctrl+Shift+`) and it will be within the container rather than one's local system.
+11. VSC will spin up a new container for you (this only needs happen once), once it has been successfull created open a Terminal (Ctrl+Shift+\`) and you'll be accessing the container's shell rather than your local one.
 
 # Install Gatsby
 1. Run `npm install -g gatsby-cli`
@@ -45,11 +46,11 @@ You'll now need to install `gatsby-source-wordpress-experimental` into your gats
 # Is Everything Working?
 Lets test to make sure everything is working correctly.
 1. Run `gatsby develop`.
-2. Wait for gatsby to spin up.
+2. Wait for Gatsby to spin up.
 3. Visit http://localhost:8000 to see the Gatsby site.
 4. Visit http://localhost:8000/__graphql to use GraphiQL, an IDE for writing GraphQL queries.
 5. Run a test to ensure that your local Gatsby instance can successfully pull data from WPGraphQL.
-You can use this [query for pulling Pages](graphiql-allpages.json) and this one [for pulling Posts](graphiql-allposts.json)
+  - You can use this [query for pulling Pages](graphiql-allpages.json) and this one [for pulling Posts](graphiql-allposts.json)
 
 # Create a Blog Post Template
 1. Create a `templates` folder inside of the `src` folder in your local Gatsby instance.
