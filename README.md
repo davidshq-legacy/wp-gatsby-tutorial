@@ -9,15 +9,6 @@ This tutorial demonstrates how to setup a Gatsby instance to utilize a WordPress
 # Setup Gatsby Environment
 For [step-by-step instructions on setting up a Gatsby environment](https://github.com/davidshq/wp-gatsby-tutorial/blob/master/SetupGatsby.md).
 
-# Install Gatsby
-1. Run `npm install -g gatsby-cli`
-2. It will take several moments for npm to download and install the necessary packages.
-2. Create a new gatsby instance by running `gatsby new wpgatsby` (the name wpgatsby can be anything you desire).
-3. It will take more time for npm to download and install the necessary packages.
-4. If prompted to choose a package manager and you don't have a preference, choose npm.
-5. With any luck you'll get the message: "Your new Gatsby website has been successfully bootstrapped."
-6. Enter into the gatsby site directory: `cd wpgatsby`.
-
 # Add the WordPress Source Plugin to Gatsby
 You'll now need to install `gatsby-source-wordpress-experimental` into your gatsby instance so that Gatsby can use data coming from your WordPress site.
 1. Run `npm install gatsby-source-wordpress-experimental`
