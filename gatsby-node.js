@@ -1,3 +1,4 @@
+// Code from: https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/blob/master/docs/tutorials/building-a-new-site-wordpress-and-gatsby.md
 const path = require(`path`)
 
 exports.createPages = ({ graphql, actions }) => {
