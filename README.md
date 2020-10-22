@@ -45,3 +45,6 @@ Pages are stored in the `src/pages` folder, we'll be editing [`index.js`](index.
 
 # Publishing Your Gatsby Site
 You can publish your site by running `gatsby build` and then copying the contents of the resulting public folder onto your host. This is super simple (and free) to do with [Surge](https://surge.sh/) or [Netlify](https://www.netlify.com/), I'd recommend using one of them.
+
+# Bibliography
+Most of what I write here (at least the good stuff) isn't my own, so check out the [partial bibliography](Bibliography.md) for credits / additional resources.
