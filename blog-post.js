@@ -1,3 +1,5 @@
+// Code from: https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/blob/master/docs/tutorials/building-a-new-site-wordpress-and-gatsby.md
+
 import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
