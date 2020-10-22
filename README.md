@@ -1,5 +1,7 @@
 # Using WordPress with Gatsby Tutorial
-This tutorial demonstrates how to setup a Gatsby instance to utilize a WordPress GraphQL source.
+I spent a lot(!) of time getting WordPress and Gatsby working together and then Gatsby improved the integration with `gatsby-source-wordpress-experimental`. At the time I wrote this article there wasn't a guide I found sufficient on implementing the new methodology - so here we are.
+
+This tutorial walks you through the basic process of setting up WP and Gatsby and then pulling (post/page) data from WP into Gatsby. Unfortunately, at this time it doesn't include anything beyond this - e.g. adding menus from WP.
 
 # Setup WordPress
 1. Use an existing WordPress site or setup a new site.
@@ -7,10 +9,10 @@ This tutorial demonstrates how to setup a Gatsby instance to utilize a WordPress
 3. Download, install, and activate the [WP-Gatsby plugin](https://github.com/TylerBarnes/using-gatsby-source-wordpress-experimental/tree/master/WordPress/plugins) from GitHub.
 
 # Setup Gatsby Environment
-For [step-by-step instructions on setting up a Gatsby environment](https://github.com/davidshq/wp-gatsby-tutorial/blob/master/SetupGatsby.md).
+For [step-by-step instructions on setting up a Gatsby environment](https://github.com/davidshq/wp-gatsby-tutorial/blob/master/SetupGatsby.md), I use VS Code to accomplish this quickly.
 
 # Add the WordPress Source Plugin to Gatsby
-You'll now need to install `gatsby-source-wordpress-experimental` into your gatsby instance so that Gatsby can use data coming from your WordPress site.
+You'll now need to install `gatsby-source-wordpress-experimental` into your Gatsby instance so that Gatsby can use data coming from your WordPress site.
 1. Run `npm install gatsby-source-wordpress-experimental`
 2. Open `gatsby-config.js` and provide a configuration for the plugin within the `plugins: []` section:
 ```
@@ -40,3 +42,6 @@ We can programmatically have Gatsby create a page for each blog post pulled from
 
 # Showing Posts on the Index Page
 Pages are stored in the `src/pages` folder, we'll be editing [`index.js`](index.js).
+
+# Publishing Your Gatsby Site
+You can publish your site by running `gatsby build` and then copying the contents of the resulting public folder onto your host. This is super simple (and free) to do with [Surge](https://surge.sh/) or [Netlify](https://www.netlify.com/), I'd recommend using one of them.
